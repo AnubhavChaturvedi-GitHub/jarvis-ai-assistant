@@ -1,64 +1,105 @@
-# J.A.R.V.I.S - Just A Rather Very Intelligent System 🤖
+# J.A.R.V.I.S: Voice-Controlled AI Assistant in Python
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Instagram][instagram-shield]][instagram-url]
-[![Twitter][twitter-shield]][twitter-url]
-[![YouTube][youtube-shield]][youtube-url]
-[![Telegram][telegram-shield]][telegram-url]
+> An offline-friendly, voice-activated AI desktop assistant that listens, thinks, speaks and controls your computer. Speech recognition, text to speech, real-time web search, image generation, computer vision and WhatsApp automation in one Python project.
 
-**Welcome to J.A.R.V.I.S!**  
-J.A.R.V.I.S (Just A Rather Very Intelligent System) is an advanced AI assistant inspired by Iron Man's Jarvis, designed to assist with various tasks, from navigating websites to controlling your PC with natural language commands.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/AnubhavChaturvedi-GitHub/jarvis-ai-assistant?style=for-the-badge&color=yellow)](https://github.com/AnubhavChaturvedi-GitHub/jarvis-ai-assistant/stargazers)
+[![Forks](https://img.shields.io/github/forks/AnubhavChaturvedi-GitHub/jarvis-ai-assistant?style=for-the-badge&color=blue)](https://github.com/AnubhavChaturvedi-GitHub/jarvis-ai-assistant/network/members)
 
-![image](https://github.com/user-attachments/assets/59727c15-d85a-41bc-b27d-bea08b3b3a41)
+![J.A.R.V.I.S in action](https://github.com/user-attachments/assets/59727c15-d85a-41bc-b27d-bea08b3b3a41)
 
+## What it does
 
-## Installation ⚙️
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/AnubhavChaturvedi-GitHub/J.A.R.V.I.S.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd J.A.R.V.I.S
-    ```
-3. Install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+J.A.R.V.I.S (Just A Rather Very Intelligent System) is a Python voice assistant inspired by Iron Man. You speak, it understands the intent, runs the right module, and answers out loud. It is built as separate, swappable subsystems rather than one giant script, so you can use only the parts you need.
 
-## Usage 🚀
-To start the assistant, run:
+## Features
+
+| Module | What it gives you |
+|---|---|
+| `NetHyTechSTT` | Custom speech to text engine, no paid API required |
+| `TextToSpeech` | Natural spoken replies |
+| `Brain` / `co_brain.py` | Language model reasoning and conversation memory |
+| `Real_Time` | Live web search so answers are not limited to training data |
+| `TextToImage` | Generate images from a spoken prompt |
+| `Vision` | Camera capture and image understanding |
+| `Automation` | Open apps, control the desktop, run system tasks |
+| `Whatsapp_automation` | Send WhatsApp messages hands free |
+| `Weather_Check` | Live weather by location |
+| `Time_Operations` | Alarms, reminders and scheduling |
+
+## Getting started
+
+### Prerequisites
+
+- Python 3.10 or newer
+- A working microphone and speakers
+- Google Chrome (used by the browser automation modules)
+
+### Installation
+
+```bash
+git clone https://github.com/AnubhavChaturvedi-GitHub/jarvis-ai-assistant.git
+cd jarvis-ai-assistant
+pip install -r requirements.txt
+```
+
+### Run it
+
 ```bash
 python jarvis.py
 ```
 
-## Contribution 🤝
-Feel free to fork the repository, submit issues, or create pull requests. Your contributions are welcome!
+Prefer a window over a terminal:
 
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-<!-- Linkedin -->
+```bash
+python ui.py
+```
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0B5FBB
-[linkedin-url]: https://www.linkedin.com/in/anubhav-chaturvedi-/
+## Usage
 
-<!-- Instagram -->
+Say the wake word, then speak naturally:
 
-[instagram-shield]: https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white
-[instagram-url]: https://www.instagram.com/_anubhav__chaturvedi_/
+- "What is the weather in Bangalore?"
+- "Open Chrome and search for transformer architecture"
+- "Generate an image of a red sports car at sunset"
+- "Send a WhatsApp message to Rahul saying I am running late"
+- "What is happening in the news right now?"
 
-<!-- Twitter -->
+## Project structure
 
-[twitter-shield]: https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
-[twitter-url]: https://x.com/AnubhavChatu
+```
+jarvis.py              entry point, intent routing
+ui.py                  desktop interface
+co_brain.py            reasoning and conversation memory
+NetHyTechSTT/          speech to text engine
+TextToSpeech/          voice output
+TextToImage/           image generation
+Real_Time/             live web search
+Vision/                camera and image understanding
+Automation/            desktop and app control
+Whatsapp_automation/   messaging
+Weather_Check/         weather lookups
+Time_Operations/       alarms and scheduling
+```
 
+## Tech stack
 
-<!-- YouTube -->
-[youtube-shield]: https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white
-[youtube-url]: https://www.youtube.com/@NetHyTech
+Python, SpeechRecognition, Selenium, PyWhatKit, OpenCV, Requests, Tkinter.
 
-<!-- Telegram -->
-[telegram-shield]: https://img.shields.io/badge/Telegram-%231DA1F2.svg?style=for-the-badge&logo=Telegram&logoColor=white
-[telegram-url]: https://t.me/YourTelegramUsername
+## Contributing
 
+Issues and pull requests are welcome. Fork the repo, create a feature branch, and open a PR describing what changed and why.
 
+## License
+
+Released under the [MIT License](LICENSE).
+
+## Author
+
+**Anubhav Chaturvedi**, founder of [NetHyTech](https://www.youtube.com/@NetHyTech), a developer community of 30,000+ members.
+
+[![YouTube](https://img.shields.io/badge/YouTube-NetHyTech-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@NetHyTech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-chaturvedi-/)
+
+If this project saved you time, a star on the repo helps other people find it.
