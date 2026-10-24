@@ -36,4 +36,6 @@ def main():
     else:
         Alert(ran_offline_dlg)
 
-main()
+
+if __name__ == "__main__":
+    main()
